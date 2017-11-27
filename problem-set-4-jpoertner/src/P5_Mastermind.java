@@ -120,10 +120,10 @@ public class Main {
             /* Next loser check... */
             int partial = 0;
             /* Something ain't right here... TODO: FIX THIS SHIT */
-            for (int num = 0; num < answerB.length(); num++) {
-                for (int checker = 0; checker < answerB.length(); checker++) {
-                    if (answerB.charAt(num) == guessB.charAt(checker)) {
-                        guessB = removeCharAt(guessB, num);
+            for (int a = 0; a < answerB.length(); a++) {
+                for (int g = 0; g < guessB.length(); g++) {
+                    if (answerB.charAt(a) == guessB.charAt(g)) {
+                        guessB = removeCharAt(guessB, g);
                         partial++;
                     }
                 }
